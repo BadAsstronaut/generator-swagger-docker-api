@@ -1,0 +1,23 @@
+{
+  "name": "generator-studio-api",
+  "version": "1.0.0",
+  "description": "Yeoman generator for a starter API",
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "swagger",
+    "api",
+    "cognizant-studio"
+  ],
+  "author": "Kyle Mickey (kyle.mickey@cognizant.com)",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  }
+}
