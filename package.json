@@ -15,6 +15,10 @@
     "cognizant-studio"
   ],
   "author": "Kyle Mickey (kyle.mickey@cognizant.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CognizantMickey/generator-studio-api"
+  },
   "license": "ISC",
   "dependencies": {
     "yeoman-generator": "^2.0.1",
