@@ -1,13 +1,15 @@
 # README
 
-### set it up
+### Set it up!
 
-1. `$ yarn db:migrate`
-1. `$ yarn db:migrate:test`
-1. rollback to a specific version:
-* `$ MIGRATE_TO=<TIMESTAMP OF MIGRATION> yarn db:migrate`
-1. `$ nodemon start`
-* `$ yarn global add nodemon` if you don't have it... this will restart your server on *most* changes
+1. Start the database image: `$ docker-compose up -d postgres`
+1. Run the database migration script: `$ docker-compose run web npm run db:migrate`
+1. Build the spec: `$ docker-compose run web npm run spec:build`
+   * This needs to be run everytime you update the spec!
+1. Instantiate the API: `$ docker-compose up`
+1. Navigate to the Swagger docs: http://localhost/docs
+1. rollback to a specific version: (Untested)
+   * `$ docker-compose run web MIGRATE_TO=<TIMESTAMP OF MIGRATION> npm run db:migrate`
 
 ### deploy to heroku:
 1. create app on heroku
@@ -50,9 +52,7 @@ Linter alone
 
 ### todo
 * [ ] user can update their info using the same email
-* [ ] swagger - Mickey
 * [ ] mrrrbe repository pattern for models - abstract SQL away from models?
-* [ ] do we yeoman?
 * [ ] Create stored procedures and move SQL queries out of models; update models to invoke stored procedures
 
 ---
