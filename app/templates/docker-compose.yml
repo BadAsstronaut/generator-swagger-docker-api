@@ -1,15 +1,15 @@
-version: '2'
+version: '3.3'
 services:
   postgres:
-    image: "postgres:9.6"
+    image: postgres:9.6
     environment:
       POSTGRES_PASSWORD: root
       POSTGRES_USER: admin
-    web:
-      build: .
-      ports:
-      - "3000:8080"
-      volumes:
-      - .:/usr/src/<%= appname %>
-      depends_on:
-      - postgres
+  web:
+    build: .
+    ports:
+    - 3000:8080
+    volumes:
+    - .:/usr/src/<%= appname %>
+    depends_on:
+    - postgres
