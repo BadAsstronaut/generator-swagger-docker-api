@@ -11,7 +11,7 @@ const path = require('path');
 const promisify = require('util').promisify;
 const swaggerTools = require('swagger-tools');
 
-const specPath = path.resolve(__dirname, './spec');
+const specPath = path.resolve(__dirname, '../spec');
 const specYamlPath = path.resolve(specPath, 'spec.yaml');
 
 const readdir = promisify(fs.readdir);

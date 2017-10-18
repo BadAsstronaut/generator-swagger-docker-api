@@ -1,17 +1,7 @@
-[![CircleCI](https://circleci.com/gh/craftninja/exp-starter-api.svg?style=shield)](https://circleci.com/gh/craftninja/exp-starter-api)
-[![Code Climate](https://codeclimate.com/github/craftninja/exp-starter-api/badges/gpa.svg)](https://codeclimate.com/github/craftninja/exp-starter-api)
-[![Test Coverage](https://codeclimate.com/github/craftninja/exp-starter-api/badges/coverage.svg)](https://codeclimate.com/github/craftninja/exp-starter-api/coverage)
-[![Issue Count](https://codeclimate.com/github/craftninja/exp-starter-api/badges/issue_count.svg)](https://codeclimate.com/github/craftninja/exp-starter-api)
-
-
 # README
 
 ### set it up
 
-1. `$ yarn install`
-1. `$ cp .env.example .env`
-1. `$ createdb exp_starter_app_test`
-1. `$ createdb exp_starter_app_development`
 1. `$ yarn db:migrate`
 1. `$ yarn db:migrate:test`
 1. rollback to a specific version:

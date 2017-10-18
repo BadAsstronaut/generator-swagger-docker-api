@@ -12,7 +12,7 @@ const path = require('path');
 const postgrator = require('postgrator');
 
 postgrator.setConfig({
-  migrationDirectory: path.join(__dirname, '/migrations'),
+  migrationDirectory: path.join(__dirname, '../migrations'),
   driver: 'pg',
   connectionString: process.env.DATABASE_URL,
 });

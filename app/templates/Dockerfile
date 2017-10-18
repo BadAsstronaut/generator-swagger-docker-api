@@ -1,19 +1,16 @@
-FROM node:latest
+FROM node:8
 
-# App directory
-WORKDIR /usr/src/<%= appname %>
+WORKDIR /usr/src/app
 
-# Dependencies
 COPY package.json .
-COPY package-lock.json .
 
 RUN npm install
 
-# Copy application
 COPY . .
 
-# Expose on 8080
+RUN npm run spec:build
+RUN npm run 
+
 EXPOSE 8080
 
-#Start the server
-CMD [ "npm", "start" ]
+CMD ["npm", "start"]
