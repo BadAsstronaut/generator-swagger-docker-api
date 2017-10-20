@@ -169,8 +169,6 @@ describe('Users', () => {
     expect(resSelf.body.user.student).toBe(true);
   });
 
-<<<<<<< HEAD
-=======
   it('can update to using own pre-existing email address', async () => {
     const user = await createUser();
     const serializedSecondUser = await userSerializer(user);
@@ -199,7 +197,6 @@ describe('Users', () => {
     });
   });
 
->>>>>>> master
   it('cannot update to pre-existing email address', async () => {
     const firstUser = await createUser();
     const secondUser = await createUser();
