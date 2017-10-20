@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config(); }
 /**
  * Module dependencies.
  */
 
 const app = require('../app');
-const debug = require('debug')('exp-starter-api:server');
+const debug = require('debug')('<%= appname %>:server');
 const http = require('http');
 
 /**

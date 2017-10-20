@@ -1,0 +1,10 @@
+swagger: '2.0'
+info:
+  title: <%= appname %>
+  version: <%= ver %>
+
+tags:
+- name: login
+  description: Login endpoints
+- name: users
+  description: User management endpoints
