@@ -1,6 +1,7 @@
-FROM node:8
+FROM node:alpine
 
-WORKDIR /usr/src/app
+RUN mkdir -p /opt/cognizant/<%= appname %>
+WORKDIR /opt/cognizant/<%= appname %>
 
 COPY package.json .
 

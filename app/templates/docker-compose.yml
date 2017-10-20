@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   postgres:
-    image: postgres # s:9.6
+    image: postgres:9.6
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
