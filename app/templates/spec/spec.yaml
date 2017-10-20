@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
-  title: exp-starter-api
-  version: 0.0.0
+  title: <%= appname %>
+  version: <%= ver %>
 
 tags:
 - name: login
