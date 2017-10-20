@@ -12,15 +12,15 @@ Steps:
     ```bash
     $ npm i -g generator-swagger-docker-api
     ```
-1. Run the generator with your app name!
+1. Run the generator with your app name & company name!
     ```bash
-    $ yo swagger-docker-api <<app-name>>
+    $ yo swagger-docker-api <<app-name>> <<company-name>>
     ```
 1. **Profit!** Or at least have your API scaffolded out so you can start doing all of the things.
 
 The package.json version defaults to 1.0.0, but this can be overridden using:
 ```bash
-$ yo swagger-docker-api <<app name>> <<company name>> --ver=<<version>>
+$ yo swagger-docker-api <<app-name>> <<company-name>> --ver=<<version>>
 ```
 
 Note that this project uses Swagger for a spec-first API development workflow! Get to know the [Swagger 2.0 specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
