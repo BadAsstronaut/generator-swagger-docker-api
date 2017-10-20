@@ -1,6 +1,6 @@
-## generator-studio-api
+# generator-swagger-docker-api
 
-Quickly scaffold your new API by using a [Yeoman generator](http://yeoman.io/)! 
+Quickly scaffold your new API by using a [Yeoman generator](http://yeoman.io/)!
 
 Steps:
 1. Install yeoman
@@ -28,12 +28,7 @@ Note that this project uses Swagger for a spec-first API development workflow! G
 
 After the spec is authored, use `$ npm run spec:build` to create a spec.json file. The [swagger-tools](https://github.com/apigee-127/swagger-tools/blob/master/docs/Middleware.md) middleware will automagically handle Express routing based on the spec.json file. Which is pretty cool.
 
-
-
 This is brand new, so bear with us as we add more functionality:
 - [ ] DB implementation should be scripted to create a new database with the project name - currently this still targets the 'exp-starter-api' database
 - [ ] Not quite sure how we want to handle .env
 - [ ] Eventually I'd like the user to set a swagger or vanilla Express option
-
-
-
