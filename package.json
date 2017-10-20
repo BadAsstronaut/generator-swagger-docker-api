@@ -10,9 +10,12 @@
   },
   "keywords": [
     "yeoman-generator",
+    "yeoman",
     "swagger",
+    "express",
     "api",
-    "cognizant-studio"
+    "docker",
+    "docker-compose"
   ],
   "author": "Kyle Mickey (kyle.mickey@gmail.com)",
   "repository": {
