@@ -61,21 +61,17 @@ module.exports = class extends Generator {
       this.destinationPath()
     );
 
-<<<<<<< HEAD
     this.fs.copyTpl(
       this.templatePath('docker-compose.yml'),
       this.destinationPath('docker-compose.yml'),
       this.options
     );
 
-=======
->>>>>>> master
     this.fs.copy(
       this.templatePath('.*'),
       this.destinationPath()
     );
 
-<<<<<<< HEAD
     this.fs.copyTpl(
       this.templatePath('Dockerfile'),
       this.destinationPath('Dockerfile'),
@@ -93,8 +89,6 @@ module.exports = class extends Generator {
       this.destinationPath('scripts')
     );
 
-=======
->>>>>>> master
     this.fs.copy(
       this.templatePath('controllers/**'),
       this.destinationPath('controllers')
@@ -151,10 +145,5 @@ module.exports = class extends Generator {
     this.npmInstall();
   }
 
-<<<<<<< HEAD
   end() {}
 }
-=======
-  end() { }
-}
->>>>>>> master
