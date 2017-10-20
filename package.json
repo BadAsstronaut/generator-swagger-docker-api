@@ -1,5 +1,5 @@
 {
-  "name": "generator-studio-api",
+  "name": "generator-swagger-docker-api",
   "version": "1.0.0",
   "description": "Yeoman generator for a starter API",
   "files": [
@@ -14,10 +14,10 @@
     "api",
     "cognizant-studio"
   ],
-  "author": "Kyle Mickey (kyle.mickey@cognizant.com)",
+  "author": "Kyle Mickey (kyle.mickey@gmail.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CognizantMickey/generator-studio-api"
+    "url": "https://github.com/BadAsstronaut/generator-swagger-docker-api"
   },
   "license": "ISC",
   "dependencies": {

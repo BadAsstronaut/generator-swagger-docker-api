@@ -13,6 +13,13 @@ module.exports = class extends Generator {
       desc: 'Name of the application'
     });
 
+    this.argument('company', {
+      type: String,
+      required: false,
+      desc: 'Company name',
+      default: 'company'
+    });
+
     this.option('ver', {
       type: String,
       required: false,

@@ -1,7 +1,7 @@
 FROM node:alpine
 
-RUN mkdir -p /opt/cognizant/<%= appname %>
-WORKDIR /opt/cognizant/<%= appname %>
+RUN mkdir -p /opt/<%= company %>/<%= appname %>
+WORKDIR /opt/<%= company %>/<%= appname %>
 
 COPY package.json .
 
