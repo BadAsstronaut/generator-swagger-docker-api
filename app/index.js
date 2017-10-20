@@ -99,13 +99,19 @@ module.exports = class extends Generator {
       this.destinationPath('spec')
     );
 
+    this.fs.copyTpl(
+      this.templatePath('spec/spec.yaml'),
+      this.destinationPath('spec/spec.yaml'),
+      this.options
+    );
+
     this.fs.copy(
       this.templatePath('test/**'),
       this.destinationPath('test')
     );
   }
 
-  install() { 
+  install() {
     this.npmInstall();
   }
 
